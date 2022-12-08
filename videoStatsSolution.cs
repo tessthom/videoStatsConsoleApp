@@ -10,7 +10,7 @@ namespace Videos
 
             do // display prompt for number of videos and validate input
             {
-                Console.Write("\nEnter the amount of videos that will be selected from YouTube (min: 1 - max: 9): ");
+                Console.Write("\nEnter an amount of videos to analyze (min: 1 - max: 9): ");
 
                 // get input
                 num = Convert.ToInt32(Console.ReadLine());
@@ -18,7 +18,7 @@ namespace Videos
                 // display error message if input invalid
                 if ((num < 1) || (num > 9))
                 {
-                    Console.WriteLine("\nERROR: ENTER BETWEEN 1 AND 9 VIDEOS. TRY AGAIN");
+                    Console.WriteLine("\nERROR: ENTER BETWEEN 1 AND 9 VIDEOS. PLEASE TRY AGAIN");
                 }
             } while ((num < 1) || (num > 9)); // reiterate prompt if input invalid
 
